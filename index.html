@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+        </div>
+        <button class="connect-btn">Let's Connect</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Shona UI/UX Designer</h1>
+            <p>Hello! I'm Shona, a passionate and hardworking Computer Science and Engineering student specializing in Artificial Intelligence and Machine Learning at Sri Krishna College of Technology. With a strong foundation in programming languages like C, C++, Java, and Python, I thrive on solving complex problems and building innovative solutions.</p>
+            <button class="connect-btn">View My Work</button>
+        </div>
+        <div class="hero-image">
+            <img src="/api/placeholder/500/500" alt="Profile" style="width: 100%; border-radius: 20px;">
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="/api/placeholder/60/60" alt="Web Development" class="skill-icon">
+                <h3>Web Development</h3>
+            </div>
+            <div class="skill-card">
+                <img src="/api/placeholder/60/60" alt="Brand Identity" class="skill-icon">
+                <h3>Brand Identity</h3>
+            </div>
+            <div class="skill-card">
+                <img src="/api/placeholder/60/60" alt="Logo Design" class="skill-icon">
+                <h3>Logo Design</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="projects-tabs">
+            <button class="tab active" onclick="switchTab(1)">Tab 1</button>
+            <button class="tab" onclick="switchTab(2)">Tab 2</button>
+            <button class="tab" onclick="switchTab(3)">Tab 3</button>
+        </div>
+    
+        <div class="project-container active" data-tab="1">
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="/api/placeholder/400/300" alt="Business Startup" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Business Startup</h3>
+                        <p class="project-subtitle">Design & Development</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="/api/placeholder/400/300" alt="Let's do it together" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Let's do it together</h3>
+                        <p class="project-subtitle">Collaboration Platform</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="/api/placeholder/400/300" alt="Boost Your Startup" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Boost Your Startup</h3>
+                        <p class="project-subtitle">Growth Platform</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="project-container" data-tab="2">
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="/api/placeholder/400/300" alt="Project 4" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Project 4</h3>
+                        <p class="project-subtitle">Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="project-container" data-tab="3">
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="/api/placeholder/400/300" alt="Project 7" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Project 7</h3>
+                        <p class="project-subtitle">Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section" id="achievements">
+        <h2 class="section-title">Achievements Timeline</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>2024</h3>
+                <h4>Completed Cloud Computing Course</h4>
+                <p>Received an Elite Certificate from NPTEL in Cloud Computing.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>2024</h3>
+                <h4>Completed AI Specialization</h4>
+                <p>Finished the IBM Machine Learning Specialization with a focus on Deep Learning and Reinforcement Learning.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>2023</h3>
+                <h4>Started Full Stack Web Development Internship</h4>
+                <p>Joined Edu-versity for a two-month internship.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <h2 class="section-title">Get In Touch</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="First Name" class="form-input">
+            <input type="text" placeholder="Last Name" class="form-input">
+            <input type="email" placeholder="Email Address" class="form-input">
+            <input type="tel" placeholder="Phone No." class="form-input">
+            <textarea placeholder="Message" class="form-input" rows="5"></textarea>
+            <button type="submit" class="connect-btn">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright 2024. All Rights Reserved</p>
+        <div class="social-icons">
+            <a href="#" class="social-icon">LinkedIn</a>
+            <a href="#" class="social-icon">Email</a>
+            <a href="#" class="social-icon">GitHub</a>
+        </div>
+    </footer>
+</body>
+</html>
