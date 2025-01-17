@@ -26,3 +26,18 @@ function expandProject(card) {
         card.querySelector(".expanded-content").style.display = "flex";
     }
 }
+
+// Get the modal, button, and close elements
+var modal = document.getElementById("imageModal");
+var btn = document.getElementById("showImageBtn");
+var span = document.getElementsByClassName("close")[0];
+var modalImage = document.getElementById("modalImage");
+
+// Get all the buttons with class "showImageBtn"
+var buttons = document.querySelectorAll(".showImageBtn");
+var modal = document.getElementById("imageModal");
+var modalImage = document.getElementById("modalImage");
+var span = document.getElementsByClassName("close")[0];
+
+
+

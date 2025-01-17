@@ -246,6 +246,28 @@ nav {
     position: relative;
     aspect-ratio: 16/9;
 }
+.project-grid1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.project-card1 {
+    border-radius: 15px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s;
+    position: relative;
+    aspect-ratio: 16/9;
+    flex: 1; /* Allows the cards to take equal space */
+    max-width: 100%; /* Ensures two cards per row */
+    grid-template-columns: repeat(2, 1fr)
+}
+.project-card1:hover {
+    transform: translateY(-5px);
+}
+.project-card1:hover .project-overlay {
+    opacity: 1;
+}
 
 .project-card:hover {
     transform: translateY(-5px);
@@ -283,6 +305,33 @@ nav {
 .project-subtitle {
     color: rgba(255, 255, 255, 0.9);
     text-align: center;
+}
+
+
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Aligns buttons in the center */
+    gap: 1rem; /* Adds space between buttons */
+}
+
+.code1, .code2 {
+    padding: 0.5rem 1.5rem; /* Reduced padding for smaller buttons */
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.code1 {
+    background: #FF6B6B;
+}
+
+.code2 {
+    background: #FF6B6B;
 }
 
 .timeline {
